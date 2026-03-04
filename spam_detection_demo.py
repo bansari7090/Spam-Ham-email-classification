@@ -72,29 +72,6 @@ while True:
     print("-" * 40)
 
 
-
-#  Step 1 – Learn from examples
-# In train_texts and train_labels, you told the model:
-# Messages like "win a free prize", "you won money", "click here to get cash" are spam.
-# Messages like "let's meet tomorrow", "can we have lunch", "see you in class" are ham.
-# From this, it learns things like:
-# Words such as “win”, “free”, “prize”, “money”, “cash”, “click” show up mostly in spam.
-# Words such as “meet”, “lunch”, “tomorrow”, “class” show up mostly in ham.
-# Step 2 – Turn words into numbers
-# CountVectorizer counts how many times each word appears in a message.
-# So a message becomes something like:
-# "win a free phone" → counts for words: win=1, free=1, phone=1, others=0
-# Step 3 – Compare “spam” vs “ham” probabilities
-# MultinomialNB (Naive Bayes) uses those counts and the learned statistics to estimate:
-# P(message∣spam)
-# P(message∣spam) vs 
-# P
-# (
-# message
-# ∣
-# ham
-# )
-# P(message∣ham)
-# If the message looks more like the spam examples (more spammy words), it outputs "spam".
 # If it looks more like the ham examples, it outputs "ham".
+
 # So: the basis is the pattern of words in your input, compared to the patterns it saw in the labeled training messages.
