@@ -70,8 +70,3 @@ while True:
     print("Message:", text)
     print("ML classification:", label)
     print("-" * 40)
-
-
-# If it looks more like the ham examples, it outputs "ham".
-
-# So: the basis is the pattern of words in your input, compared to the patterns it saw in the labeled training messages.
